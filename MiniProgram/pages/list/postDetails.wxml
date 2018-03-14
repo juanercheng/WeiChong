@@ -1,0 +1,41 @@
+<view class="content">
+  <view class='topBox'>
+    <view class='imgBox'>
+      <image class='img' src='{{details.imgurl}}'></image>
+    </view>
+    <view class='con'>
+      <text class='title'>{{details.wireName}}</text>
+      <text class="small">{{details.dictionaryName}}</text>
+      <text class="small">手机充电</text>
+    </view> 
+  </view> 
+  <view class='ulBox'>
+    <ul>
+      <li bindtap="go"> 
+        <view class='leftBox'>
+          <image class='postionLan' src='../../images/postionLan.png' style='width:11px;height:14px;margin-top:4px'></image>
+          <text>{{details.province}}{{details.city}}{{details.area}}{{details.address}}</text>
+        </view>
+        <image src='../../images/details.png'></image>
+      </li>
+      <li bindtap="goStoreDetails">
+        <view class='leftBox'>
+          <image class='store' src='../../images/store.png' style='width:15px;height:14px;margin-top:4px'></image>
+          <text>{{details.user.sellerName}}</text>
+        </view>
+        <image src='../../images/details.png'></image>
+      </li>
+    </ul>
+  </view>
+  <view class='parting'></view>
+  <view class='info'>
+    <view class='title'>
+      <image src="../../images/doe.png"></image>
+      <text>驿站简介</text>
+    </view>
+    <text>{{details.recommend}}</text>
+    <view class='Box' wx:for="{{imgData}}">
+      <image src='{{item}}'></image>
+    </view>
+  </view>
+</view>

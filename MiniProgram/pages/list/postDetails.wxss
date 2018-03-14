@@ -1,0 +1,98 @@
+/* pages/list/listDetails.wxss */
+.content{
+  font-size: 18px;
+}
+.content .topBox {
+  display: flex;
+  padding: 16px;  
+}
+.content .topBox .imgBox{
+  margin-right: 30px; 
+}
+.content .topBox .imgBox .img{
+  width:100px;
+  min-width: 100px;
+  height:75px;
+  margin: 0px;
+}
+.content .topBox .con{
+  display: inline-flex;
+  flex-direction:column;
+  overflow: hidden;
+}
+.content .topBox .con .title{
+  margin-top: 5px;
+  font-size:15px;
+}
+.content .topBox .con .small{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: rgb(155, 155, 155);
+}
+.ulBox ul li{
+  font-size: 13px;
+  position: relative;
+  display: flex;  
+  justify-content:  space-between ;
+  padding: 15px 0;
+  border-top: 1px solid #ddd;
+}
+.ulBox ul li:last-child{
+  border-bottom: 1px solid #ddd;
+}
+.ulBox ul li image:first-child{
+  position: absolute;
+  top:30rpx;
+  left: 0
+}
+.ulBox ul li image {
+  width: 16px;
+  height: 16px;
+}
+.ulBox ul li .leftBox{
+  display: flex;
+  justify-content: space-around;
+}
+.ulBox ul li .leftBox image{
+   margin: 0 40rpx; 
+  height: auto;
+}
+.ulBox ul li .leftBox view{
+  word-wrap : break-word 
+}
+.ulBox ul li text{
+  margin-left: 100rpx;
+}
+.parting{
+  height: 20rpx;
+  width: 100%;
+  background-color: #efefef;
+} 
+.info{
+  margin: 30rpx;
+  font-size: 13px;
+}
+.info .title{
+  position: relative;
+  font-size: 15px;
+  color: #666;
+  margin-left: 30rpx;
+  margin-bottom: 45rpx;
+}
+.info .title image{
+  position: absolute;
+  top: 8rpx;
+  left: -20rpx;
+  width: 3px;
+  height: 15px;
+}
+.info .title .text{
+  color:rgb(102,102,102);
+}
+.Box image{
+  width: 99%;
+  /* max-width:99% !important;
+  height:auto !important; */
+  margin: 30rpx 0;
+}

@@ -1,0 +1,36 @@
+.icon{
+  margin-top: 120rpx;
+  text-align: center;
+}
+.icon image{
+  width: 120rpx;
+  height: 120rpx;
+}
+.paysucess{
+  margin-top: 20rpx;
+  font-size: 15px;
+}
+.payInformation{
+  margin-top: 100rpx;
+  text-align: center;
+  font-size: 15px;
+}
+.payInformation .information{
+  margin-top: 40rpx;
+  font-size: 20px;
+  font-weight: bold;
+}
+.state{
+  margin-top: 400rpx;
+  display: flex;
+}
+.cancle{
+  width: 120px;
+  height: 45px;
+}
+.state .down{
+  background-color: white;
+  border: 1px solid #169bd5;
+  width: 140px;
+  
+}

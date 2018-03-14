@@ -1,0 +1,189 @@
+.logo {
+  margin-top: 55rpx;
+  text-align: center;
+}
+
+.content { 
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+ 
+.logo image {
+  width: 420rpx;
+  height: 78rpx;
+}
+
+.circular {
+  margin: auto;
+  margin-top: 142rpx;
+  width: 460rpx;
+  height: 460rpx;
+  border: 1px solid #0ca6ba;
+  border-radius: 230rpx;
+}
+
+.circular-yello {
+  margin: auto;
+  margin-top: 142rpx;
+  width: 460rpx;
+  height: 460rpx;
+  border: 1px solid #ffa11a;
+  border-radius: 230rpx;
+}
+
+.charge {
+  margin: auto;
+  margin-top: 156rpx;
+  width: 70%;
+}
+
+.chargeBad {
+  margin-top: 156rpx;
+  display: flex;
+}
+
+.charge .click {
+  background-color: #0ca6ba;
+  color: white;
+  height: 80rpx;
+  border-radius: 40rpx;
+}
+
+.chargeBad .back {
+  height: 80rpx;
+  width: 40%;
+  background-color: white;
+  border: 1px solid #0ca6ba;
+  border-radius: 40rpx;
+  color: #0ca6ba;
+  font-size: 30rpx;
+}
+
+.chargeBad .again {
+  height: 80rpx;
+  width: 40%;
+  background-color: #0ca6ba;
+  border: 1px solid #0ca6ba;
+  border-radius: 40rpx;
+  color: white;
+  font-size: 30rpx;
+}
+
+.img {
+  text-align: center;
+  margin-top: 180rpx;
+  /* position:absolute;  */
+  position: relative;
+}
+
+.img .trajectory {
+  width: 390rpx;
+  height: 390rpx;
+  position: fixed;
+}
+
+.logoGo {
+  position: absolute;
+  /* position: relative; */
+  left: 305rpx;
+  top: 130rpx;
+}
+
+.rotate {
+  position: relative;
+  left: -190rpx;
+  width: 390rpx;
+  height: 390rpx;
+  margin: auto;
+  -webkit-animation: myfrist 2s infinite linear;
+  animation: myfrist 2s infinite linear;          
+}
+
+.rotate .progress {
+  position: absolute;
+  left: 220rpx;
+  top: -5rpx;
+  width: 370rpx;
+  height: 400rpx;
+}
+
+.go {
+  position: absolute;
+  left: 210rpx;
+  top: 280rpx;
+}
+
+.link {
+  position: relative;
+  left: 15rpx;
+  top: 50rpx;
+  font-size: 30rpx;
+}
+
+ @keyframes myfrist {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+  }
+
+  25% {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+  }
+
+  50% {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+  }
+
+  75% {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+  }
+} 

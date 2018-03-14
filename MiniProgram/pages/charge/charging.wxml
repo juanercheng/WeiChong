@@ -1,0 +1,47 @@
+<view class="content">
+  <!-- 正在充电  -->
+  <view class='contented' wx:if="{{chargeStart}}">
+    <view class='logo'>
+      <image src='../../images/logo.png'></image>
+    </view>
+    <!-- //中间的圆 -->
+    <view class='hello'>
+       <image src='../../images/do.gif' style='width: 320px;height:320px;margin:auto'></image> 
+    </view>
+    <view class='trace'>
+       <view class='clock'>{{clock}}</view>
+    </view>
+    <view class='charge'>
+      <button class='click' bindtap='again'>返回首页</button>
+    </view>
+  </view>
+
+  <!--充电故障 -->
+  <view class='contented' wx:if="{{false}}">
+    <view class='logo'>
+      <image src='../../images/logo.png'></image>
+    </view>
+    <!-- //中间的圆 -->
+    <view class='end'>
+      <image src='../../images/chargeBad.png'></image>
+    </view>
+    <view class='chargeBad'>
+      <button class='back' bindtap='back'>返回首页</button>
+      <button class='again' bindtap='recharge'>重新充电</button>
+    </view>
+  </view>
+
+  <!--充电完成  -->
+  <view class='contented' wx:if="{{chargeEnd}}">
+    <view class='logo'>
+      <image src='../../images/logo.png'></image>
+    </view>
+    <!-- //中间的圆 -->
+    <view class='end'>
+      <image src='../../images/chargeEnd.png'></image>
+    </view>
+    <view class='charge'>
+      <button class='click' bindtap='back'>返回首页</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,30 @@
+<!--支付成功  -->
+<view wx:if="{{true}}">
+  <view class="icon">
+    <image src='../../images/sucess.png'></image>
+    <view class='paysucess'>支付成功</view>
+  </view>
+  <view class="payInformation">
+    <view>支付信息</view>
+    <view class='information'>支付信息</view>
+  </view>
+  <view class='state'>
+    <button class="down" bindtap='down'>完成</button> 
+  </view>
+
+</view>
+<!--支付失败  -->
+<view wx:if="{{false}}">
+  <view class="icon">
+    <image src='../../images/sucess.png'></image>
+    <view class='paysucess'>支付失败</view>
+  </view>
+  <view class="payInformation">
+    <view>支付信息</view>
+    <view class='information'>支付信息</view>
+  </view>
+  <view class='state'>
+    <button class="cancle" bindtap='cancle' style='background-color: white;border: 1px solid #169bd5'>取消</button>
+    <button class="cancle" bindtap='repay' style='background-color: #169bd5;border: 1px solid #169bd5;color:white'>重新支付</button>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+<view>
+  <view class='img'>
+    <image src='../../images/charge.png' style='width:100rpx;height:100rpx'></image>
+  </view>
+  <view class='user'>用户名</view>
+  <view class='ulBox'>
+    <ul>
+      <li bindtap="go">
+        <view class='leftBox'>
+          <text>充电记录</text>
+        </view>
+        <image src='../../images/details.png'></image>
+      </li>
+      <li bindtap="goStoreDetails">
+        <view class='leftBox'>
+          <text>问题反馈</text>
+        </view>
+        <image src='../../images/details.png'></image>
+      </li>
+      <li bindtap="about">
+        <view class='leftBox'>
+          <text>关于</text>
+        </view>
+        <image src='../../images/details.png'></image>
+      </li>
+    </ul>
+  </view>
+</view>

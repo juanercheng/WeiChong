@@ -1,0 +1,13 @@
+<view class='all'>
+  <view class='img'>
+    <view> 
+      <image src='../../images/failed.png'></image>
+    </view>
+    <view class='title'>连接失败</view>
+    <view class='content'>连接失败，请重新开启蓝牙</view>
+    <view class='click'>
+      <button plain='true' bindtap="cancel" style='color:#0ca6ba'>取消</button>
+      <button bindtap="again" style='background-color: #0ca6ba;color:white'>重新扫描</button>
+    </view> 
+  </view>
+</view>

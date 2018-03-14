@@ -1,0 +1,36 @@
+.img{
+  text-align: center;
+  margin-top:30px 
+}
+.user{
+  text-align: center;
+}
+.ulBox{
+  margin-top:50px 
+}
+.ulBox ul li{
+  font-size: 30rpx;
+  position: relative;
+  display: flex;  
+  justify-content:  space-between ;
+  padding: 15rpx 0;
+  border-top: 1px solid #ddd;
+}
+.ulBox ul li:last-child{
+  border-bottom: 1px solid #ddd;
+}
+.ulBox ul li image:first-child{
+  position: absolute;
+  top:30rpx;
+  left: 0
+}
+.ulBox ul li image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.ulBox ul li .leftBox image{
+  margin: 0 20rpx;
+}
+.ulBox ul li text{
+  margin-left: 50rpx;
+}

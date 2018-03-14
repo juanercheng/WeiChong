@@ -1,0 +1,22 @@
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove"></view>
+<view class="modal-dialog">
+  <view class="modal-title">套餐</view>
+  <view class="modal-content">
+    <view class='package'>
+      <view wx:for="{{timeArray}}" id="{{item.id}}" bindtap="Topay">充电{{item.time}} ￥{{item.price}}</view>
+      <!-- <view >充电30分钟 ￥0.8</view>
+      <view >充电小时 ￥1.2</view> -->
+    </view>
+  </view>
+  <view class="modal-title02">充电流程</view>
+  <view class="modal-content">
+    <view class='process'>
+      <view>①　微信扫一扫或小程序扫描器扫描产品二维码</view>
+      <view>②　请求打开蓝牙、蓝牙链接产品，显示连接状态</view>
+      <!-- <view>③　确认链接成功后展示套餐页面，用户选择相应套餐后跳出套餐详情确认页面</view>
+      <view>④　用户完成支付后发送相应的时间指令给设备</view>
+      <view>⑤　充电订单执行中可返回首页</view>
+      <view>⑥　充电订单结束，推送消息给用户</view> -->
+    </view>
+  </view>
+</view>

@@ -1,0 +1,25 @@
+<scroll-view class="warper">
+  <view class='firstBar' wx:if="{{firstBar}}">
+    <image style='top:{{usertop}}px;left:{{userleft}}px' src='../../images/listmap.png' bindtap='tapMapPattern'></image>
+  </view>
+  
+  <ul wx:if="{{postList}}" class="postList" style="{{top}}px">
+    <li wx:for="{{listData}}" id='{{item.id}}' style='height:96px' bindtap="goListDetails">
+      <view class='imgBox'>
+        <image src='{{item.imgurl}}' binderror="errImg" data-errorimg="{{index}}"></image>
+      </view>
+      <view class='content'>
+        <text class='title'>{{item.wireName}}</text>
+        <text class="small">{{item.dictionaryName}}</text>
+        <view class="address">
+          <image src='../../images/dddPost.png' class='position'></image>
+          <text class='positionText'>{{item.address}}</text>
+        </view>
+      </view>
+    </li>
+  </ul>
+  <view class="weui-loadmore" wx:if="{{isHideLoadMore}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">正在加载</view>
+  </view>
+</scroll-view>

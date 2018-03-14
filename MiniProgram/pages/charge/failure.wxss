@@ -1,0 +1,27 @@
+.img {
+  margin-top: 130rpx;
+  text-align: center
+}
+image{
+  width: 250rpx;
+  height: 250rpx;
+}
+.img .title{
+  color: #f87e24;
+  font-size: 50rpx;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+}
+.img .content{
+  color: #999999;
+  font-size: 35rpx;
+  margin-bottom: 80rpx;
+}
+.img .click{
+  display: flex;
+}
+.img .click button{
+  width: 335rpx;
+  border:1px solid #0ca6ba;
+  border-radius: 50rpx
+}

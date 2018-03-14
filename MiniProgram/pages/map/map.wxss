@@ -1,0 +1,186 @@
+/**index.wxss**/
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#v1 {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  /* left: 82%;
+  top: 87%; */
+  border-radius: 16px;
+  z-index: 3;
+}
+
+#v1 cover-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+
+#Map {
+  /* background: red; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  /* z-index: 1; */
+}
+
+.title {
+  border: 1px solid #0ca6ba;
+  height: 30px;
+  line-height: 30px;
+  width: 50%;
+  font-size: 15px;
+  background-color: #0ca6ba;
+  color: white;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.package {
+  margin-top: 20rpx;
+}
+
+.popup {
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  /* height:380px; */
+  border-radius: 10px;
+}
+
+.popupcharge {
+  width: 90%;
+  margin: auto;
+  margin-top: 20%;
+  /* height:380px; */
+  border-radius: 10px;
+}
+
+.package .price {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 20px;
+  margin: auto;
+  width: 70%;
+  margin-top: 8px;
+  border: 1px solid #0ca6ba;
+  border-radius: 15px;
+  padding: 0 5%;
+  color: #0ca6ba;
+}
+
+.package .price cover-view {
+  height: 60px;
+  line-height: 60px;
+}
+
+.about {
+  border: 1px solid rgb(255, 193, 0);
+  height: 30px;
+  line-height: 30px;
+  width: 50%;
+  font-size: 15px;
+  background-color: rgb(255, 193, 0);
+  color: white;
+  margin: auto;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.process {
+  width: 95%;
+  color: rgb(102, 102, 102);
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 5%;
+  font-size: 13px;
+}
+
+.close {
+  width: 46px;
+  height: 46px;
+  border-radius: 46px;
+  color: black;
+  line-height: 46px;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.chargeInfomation {
+  background: white;
+  width: 60%;
+  height: 100px;
+  margin: 50% auto;
+  border-radius: 10px;
+  border: rgba(0, 0, 0, 0.4) solid 1px;
+  /* z-index: 2; */
+  position: relative;
+}
+
+.chargeImgModel {
+  width: 45%;
+  height: 90px;
+  /* background: red; */
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+.chargeImg{
+ height :90px;
+}
+
+.chargeAdress {
+  position: absolute;
+  left: 51%;
+  width: 45%;
+  height: 30px;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  top: 45%;
+  margin-top: 10px;
+  /* text-align: center; */
+  line-height: 30px;
+  color: grey;
+}
+
+.chargeName {
+  position: absolute;
+  left: 51%;
+  width: 45%;
+  height: 30px;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  top: 0;
+  margin-top: 10px;
+  /* text-align: center; */
+  line-height: 30px;
+}
+
+.text {
+  margin-top: 20rpx;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}

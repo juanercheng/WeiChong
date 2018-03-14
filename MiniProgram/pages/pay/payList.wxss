@@ -1,0 +1,413 @@
+/* pages/pay/payList.wxss */
+.content{
+   display: flex;
+   margin: 30rpx;  
+   flex-direction: column;
+   padding-top: 30rpx;
+}
+.content .list>view {
+  border: 1px solid #ddd;
+  padding: 50rpx;  
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+}
+.content image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 30rpx;
+}
+.payList{
+  display: flex;
+  justify-content: space-between;
+  
+  background-repeat: no-repeat;
+  background-size: 50rpx 50rpx;
+  background-position: 30rpx;
+}
+.content .payList>view{
+  padding-left: 60rpx;
+}
+.content .price{
+  color: #fe9b26;
+}
+.buttonBox button{
+  background-color: #0ca6ba;
+  color: #fff;
+  margin-top: 120rpx;
+  border-radius: 100rpx;
+}
+.active-tag{
+  background-color: #0ca6ba;
+  color: #fff;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDZCQ0I1NDlCNkQyMTFFNzg5RjBGQzcyQzc0MTFEMDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDZCQ0I1NEFCNkQyMTFFNzg5RjBGQzcyQzc0MTFEMDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowNkJDQjU0N0I2RDIxMUU3ODlGMEZDNzJDNzQxMUQwOCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowNkJDQjU0OEI2RDIxMUU3ODlGMEZDNzJDNzQxMUQwOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PoBERGAAAAM/SURBVHjazJlLaxNRGIansVatNUUTF2LahWhdpBGhKQZ3VsGleOvFS6FQULzs2p8ggmKkoSHuXKiomP4Cb8tW1I11oRFdWMVWakWtito2vl99BybDJHNmOjPxwANJ5sw5z8yZc+Z8X2qKxaLmooRAO9gFkqAFbASrefw7eA8K4Al4CB6DBacd1TgUjIHT4Cj4Au6DUfACTIBZ1msATWAr2Al2g0ZwA2TBO+UeRVCBCMiCGZAGCcXzjCR47gzbiqicp9JwJ5gEGRB1IWZ1sRm22bUUwVqQAwXQ7oGYmSTbzrEvy3rlnsF6cBssA93gq+ZPCYNbYB50gR8qk6QWjICf4Dj4o/lbloNrYBU4CObMy4W5DIs46A1ATmMfvexz2G4Wy0P7CoR9eObsCLPvnnKTJMKZ1VYFOR3p+yNYbzVJchz/s1p1SwbUgZPGIW7mAhoN+I6dAiOgwfBblC7NxiE+Dy4HLDdY/FfmwBbTsTSdFgVDYAK0VkFuHvRZHI/TKSRfdoDn/5Gczri4yTrYAe4GNAEGwQVuu/rB1Qp178l2TgTbwFgAcgMO5DQ6JfVbuc3nYR1QHFYj4jQuH6Z9Xl7cyOkvjmn58AussKiwHayrkpxQJ266YJ3p4GawAF7rC2bAciWCVkO8EoyyAzeSS5UrGeJyk6QRjLmQ9EKuZJLkK8QGTiW9ktNjobysg09BqsxaJKHlXvAIbGJ821xhnbvoYJ2zK6nFmBqWKQ5zpauxu5Ne3jmdZ/KqM24W4i4l/ZAr2Szo2620wolGyTfgnGHL1Ofh4l6y3RJi4JPiG8Uo6YdclC4xc0ySZcSvOZCUYT3g8atxiMG8ZdA05SBokpW+yYegacqYtzFX6GY6olphp/R9xC71cQVsAIcCCtz17EIeTIITdqkPCfnuME/SG3Dq4zD4rZLArOcVaQElj+Tt02mVPAqVOVEq7gNvmcJN+iCXZNvSx34rOdUMq0ycD5z+EY8SmENss8eufkjhSmUIEnw2JSl+CbS6uGNxnltgW9LmTT+S6GfAMfCZoaEk0V8yif6N9dYwid7CJPoesBZcZ4pNOYnuVND8N0QHw9YWyjfw+CwlCtzOPXD7N8RfAQYAoo8pbzWOIfgAAAAASUVORK5CYII=');
+  background-repeat: no-repeat;
+  background-size: 50rpx 50rpx;
+  background-position: 30rpx;
+}
+.active-tag .price{
+  color: #fff;
+}
+/*button*/
+.btn { 
+ width: 80%; 
+ padding: 20rpx 0; 
+ border-radius: 10rpx; 
+ text-align: center; 
+ margin: 40rpx 10%; 
+ background: #000; 
+ color: #fff; 
+} 
+  
+/*mask*/
+.drawer_screen { 
+ width: 100%; 
+ height: 100%; 
+ position: fixed; 
+ top: 0; 
+ left: 0; 
+ z-index: 1000; 
+ background: #000; 
+ opacity: 0.5; 
+ overflow: hidden; 
+} 
+  
+/*content*/
+.drawer_box { 
+ width: 650rpx; 
+ overflow: hidden; 
+ position: fixed; 
+ top: 45%; 
+ left: 0; 
+ z-index: 1001; 
+ background: #FFFFFF; 
+ margin: -150px 50rpx 0 50rpx; 
+ border-radius: 52rpx; 
+} 
+  
+.drawer_title{ 
+ padding:15px; 
+ font: 20px "microsoft yahei"; 
+ text-align: center;
+ display: flex; 
+ border-bottom: 1px solid;
+ 
+} 
+.drawer_content { 
+ height: 210px; 
+ overflow-y: scroll; /*超出父盒子高度可滚动*/
+} 
+  
+.btn_ok{ 
+ padding: 10px; 
+ font: 20px "microsoft yahei"; 
+ text-align: center; 
+ border-top: 1px solid #E8E8EA; 
+ color: #3CC51F; 
+} 
+  
+.top{ 
+ padding-top:8px; 
+} 
+.bottom { 
+ padding-bottom:8px; 
+} 
+.title { 
+ height: 30px; 
+ line-height: 30px; 
+ width: 160rpx; 
+ text-align: center; 
+ display: inline-block; 
+ font: 300 28rpx/30px "microsoft yahei"; 
+} 
+  
+.input_base { 
+ border: 2rpx solid #ccc; 
+ padding-left: 10rpx; 
+ margin-right: 50rpx; 
+} 
+.input_h30{ 
+ height: 30px; 
+ line-height: 30px; 
+} 
+.input_h60{ 
+ height: 60px; 
+} 
+.input_view{ 
+ font: 12px "microsoft yahei"; 
+ background: #fff; 
+ color:#000; 
+ line-height: 30px; 
+} 
+  
+input { 
+ font: 12px "microsoft yahei"; 
+ background: #fff; 
+ color:#000 ; 
+} 
+radio{ 
+ margin-right: 20px; 
+} 
+.grid { display: -webkit-box; display: box; height: 78px;width: 100%;top: 30%;} 
+.col-0 {-webkit-box-flex:0;box-flex:0;} 
+.col-1 {-webkit-box-flex:1;box-flex:1;} 
+.fl { float: left;} 
+.fr { float: right;}
+.close{
+  /* border: 2px solid ; */
+  height:23px;
+width:45px;
+font-size:12px;
+}
+
+.pay_title{
+  font-size:16px;
+  width: 70%;
+
+}
+.pay_information{
+  
+}
+.border_line{
+border: 1px grey solid;
+width: 50%;
+margin: 0 auto;
+
+
+
+}
+.grid1{
+  height: 48px;
+  display: flex;
+}
+.input-password-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:130rpx;
+}
+.input-password-wrap .password_dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+  box-sizing: border-box;
+  width: 90rpx;
+  height: 90rpx;
+  border: 2rpx solid #ddd;
+  border-left: none 0;
+}
+.input-password-wrap .password_dot i {
+  background: #000;
+  border-radius: 50%;
+  width: 20rpx;
+  height: 20rpx;
+}
+.payList1{
+width: 100%;
+}
+.mini{
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+}
+.actual_fee .price{
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+  .actual_fee image{
+  height: 9px;
+  width: 7px;
+ top:36.5%;
+position:fixed;
+left:81%;
+
+
+}
+.back_card {
+flex-direction: row-reverse;
+width:73%;
+height:38px;
+margin:10px auto;
+text-align:center;
+text-rendering:optimizeLegibility;
+font-kerning: normal;
+font-size:13px;
+
+}
+.back_card icon{
+ height:32px;
+width:32px;
+position:fixed;
+top:57%;
+left:22%;
+
+}
+page .pay {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+page .pay .title {
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 28rpx;
+  color: #353535;
+  padding: 0 23rpx;
+  border-bottom: 1rpx solid #ddd;
+  box-sizing: border-box;
+}
+
+page .pay .wx_pay, page .pay .offline_pay, page .pay .wallet_pay {
+  margin: 0 26rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 2rpx solid #ddd;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+page .pay .wx_pay .icon, page .pay .offline_pay .icon,
+page .pay .wallet_pay .icon {
+  width: 34rpx;
+  height: 34rpx;
+  border: 2rpx solid #ddd;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+page .pay .wx_pay .icon.active, page .pay .offline_pay .icon.active,
+page .pay .wallet_pay .icon.active {
+  border: 10rpx solid #00a2ff;
+}
+
+page .pay .wx_pay text, page .pay .offline_pay text, page .pay .wallet_pay text {
+  margin-left: 20rpx;
+  color: #353535;
+  font-size: 26rpx;
+}
+
+page .pay .wallet_pay {
+  border: 0;
+  border-top: 2rpx solid #ddd;
+}
+
+page .pay .offline_pay {
+  border: 0 none;
+}
+
+page .save {
+  margin: 80rpx 23rpx;
+  color: #fff;
+  background: #00a2ff;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+}
+
+page .wallets-password {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+page .wallets-password .input-content-wrap {
+  position: absolute;
+  top: 152rpx;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 600rpx;
+  margin-left: -300rpx;
+  background: #fff;
+  border-radius: 20rpx;
+}
+
+page .wallets-password .input-content-wrap .top {
+  display: flex;
+  align-items: center;
+  height: 90rpx;
+  border-bottom: 2rpx solid #ddd;
+  justify-content: space-around;
+}
+
+page .wallets-password .input-content-wrap .top .close {
+  font-size: 44rpx;
+  color: #999;
+  font-weight: 100;
+}
+
+page .wallets-password .input-content-wrap .top .forget {
+  color: #00a2ff;
+  font-size: 22rpx;
+}
+
+page .wallets-password .input-content-wrap .actual_fee {
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  height: 100rpx;
+  margin: 0 23rpx;
+  border-bottom: 2rpx solid #ddd;
+}
+
+page .wallets-password .input-content-wrap .actual_fee span {
+  font-size: 24rpx;
+}
+
+page .wallets-password .input-content-wrap .actual_fee text {
+  font-size: 36rpx;
+}
+
+page .wallets-password .input-content-wrap .input-password-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150rpx;
+}
+
+page .wallets-password .input-content-wrap .input-password-wrap .password_dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+  box-sizing: border-box;
+  width: 90rpx;
+  height: 90rpx;
+  border: 2rpx solid #ddd;
+  border-left: none 0;
+}
+
+page .wallets-password .input-content-wrap .input-password-wrap .password_dot:nth-child(1) {
+  border-left: 2rpx solid #ddd;
+}
+
+page .wallets-password .input-content-wrap .input-password-wrap .password_dot i {
+  background: #000;
+  border-radius: 50%;
+  width: 20rpx;
+  height: 20rpx;
+}
+
+page .wallets-password .input-content {
+  position: absolute;
+  opacity: 0;
+  left: -100%;
+  top: 600rpx;
+  background: #f56;
+  z-index: -999;
+}
+
+page .wallets-password .input-content.active {
+  z-index: -99;
+}

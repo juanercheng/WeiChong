@@ -1,0 +1,14 @@
+<view class="content">
+  <!--连接中-->
+  <view>
+    <view class='img' wx:if="{{connectting}}">
+      <view class='rotate' animation="{{animation}}">
+        <image class='trajectory' src='../../images/connect/trajectory.png'></image> 
+          <image class='progress' src='../../images/connect/progress.png'></image>     
+        <image class='go' src='../../images/connect/go.png' style='width:38rpx;height:38rpx'></image>
+      </view>
+      <image src='../../images/connect/logo.png' class='logoGo' style='width:160rpx;height:135rpx'></image>
+      <view class='link'>连接中...</view>
+    </view>
+  </view>
+</view>

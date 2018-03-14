@@ -1,0 +1,15 @@
+<view class='content'>
+  <view class='list'>
+     <view wx:for="{{timeArray}}" data-id="{{item.id}}" bindtap="Topay" 
+    class="payList {{currentItem==item.id?'active-tag':''}}" bindtap="tagChoose">
+      <view>充电{{item.tctime}}分钟</view> 
+      <view class='price'>￥{{item.tcmoney}}</view>
+    </view> 
+  </view>
+  <view class='buttonBox' wx:if = "{{payChargeOne}}">
+    <button data-statu="open" bindtap="pay">请选套餐</button>
+  </view>
+  <view class='buttonBox' wx:if = "{{payChargeTwo}}">
+    <button data-statu="open" bindtap="pay">立即支付</button>
+  </view>
+</view>

@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/map/map",
+    "pages/charge/charging",
+    "pages/feedback/feedback",
+    "pages/charge/charge",
+    "pages/list/list",
+    "pages/pay/payList",
+    "pages/charge/failure",
+    "pages/pay/chooseList",
+    "pages/index/index",
+    "pages/about/about",
+    "pages/list/postDetails",
+    "pages/list/storeDetails",
+    "pages/user/user",
+    "pages/pay/paystate",
+    "pages/record/record"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0ca6ba",
+    "navigationBarTitleText": "微充",
+    "navigationBarTextStyle": "#fff"
+  }
+}

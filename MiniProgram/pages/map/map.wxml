@@ -1,0 +1,59 @@
+<map bindtap='clickScreen' id="Map" latitude="{{latitude}}" bindmarkertap="bindmarkertap" bindcontroltap="controltap" longitude="{{longitude}}" controls="{{controls}}" scale="{{scale}}" style="width: 100%; height: {{height}}px;" polyline="{{polyline}}"
+  markers="{{markers}}" show-location>
+  <cover-view class='chargeInfomation' wx:if="{{chargeInfomation}}">
+    <cover-view class='chargeImgModel'>
+      <cover-image bindtap='imgPreview' class='chargeImg' src='{{chargeImg}}'></cover-image>
+    </cover-view>
+    <cover-view class='chargeName' bindtap='clickInformation'>{{chargeName}}</cover-view>
+    <cover-view bindtap='chargego' class='chargeAdress'>{{chargeAdress}}
+    </cover-view>
+  </cover-view>
+  <cover-view class="modal" style='height:100%' title="" hidden="{{showDialog}}">
+    <cover-view class='popup'>
+      <cover-view style='background-color:white'>
+        <cover-view class='title'>套餐</cover-view>
+      </cover-view>
+      <cover-view style='background-color:white'>
+        <cover-view class='package'>
+          <cover-view class='price' wx:for="{{timeArray}}" id="{{item.id}}">
+            <cover-view>充电{{item.tctime}}分钟</cover-view>
+            <cover-view>￥{{item.tcmoney}}</cover-view>
+          </cover-view>
+        </cover-view>
+      </cover-view>
+      <cover-view style='background-color:white'>
+        <cover-view class="title" style='margin-top:20px' bindtap='charge'>充电流程</cover-view>
+      </cover-view>
+      <cover-view style='background-color:white'>
+        <cover-view class='about' bindtap='about'>
+          关于微充
+        </cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-view class='close' bindtap='cancel'>
+      <cover-image style='width:46px;height:46px' src='../../images/cancel.png'></cover-image>
+    </cover-view>
+  </cover-view>
+  <cover-view class="modal" style='height:100%' title="" hidden="{{showCharge}}">
+    <cover-view class='popupcharge'>
+      <cover-view style='background-color:white'>
+        <cover-view class="title" style='margin-top:20px'>充电流程</cover-view>
+      </cover-view>
+      <cover-view style='background-color:white'>
+        <cover-view class='process'>
+          <cover-view class='text'>①　打开手机蓝牙</cover-view>
+          <cover-view class='text'>②　使用小程序扫一扫，扫描设备二维码</cover-view>
+          <cover-view class='text'>③　等待蓝牙链接成功</cover-view>
+          <cover-view class='text'>④　选择套餐，完成支付</cover-view>
+          <cover-view class='text'>⑤　开始充电，等待订单自动结束</cover-view>
+        </cover-view>
+      </cover-view>
+    </cover-view>
+    <cover-view class='close' bindtap='cancelCharge'>
+      <cover-image style='width:46px;height:46px' src='../../images/cancel.png'></cover-image>
+    </cover-view>
+  </cover-view>
+  <cover-view id='v1' wx:if="{{userhead}}" style='top:{{usertop}}px;left:{{userleft}}px'>
+    <cover-image src='{{user}}'></cover-image>
+  </cover-view>
+</map>

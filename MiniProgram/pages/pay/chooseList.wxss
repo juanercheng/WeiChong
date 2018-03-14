@@ -1,0 +1,65 @@
+/* pages/pay/chooseList.wxss */
+
+/*弹框样式  */
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+
+.modal-dialog {
+  width: 604rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 25%;
+  left: -4%;
+  z-index: 9999;
+  background: #f9f9f9;
+  margin: -180rpx 105rpx;
+  border-radius: 36rpx;
+}
+.modal-content {
+  padding:30rpx 32rpx;
+}
+.modal-content .package,.process{
+  display: flex;
+  flex-direction: column;
+}
+.process{
+  color: #666;
+  font-size: 32rpx;
+}
+.process view{
+  padding-bottom: 15rpx;
+}
+.modal-content .package view{
+  color: #0ca6ba;
+  border: 1px solid #0ca6ba;
+  padding: 35rpx;
+  margin: 10rpx 0;
+  border-radius: 20rpx;
+  text-align: center;
+}
+.modal-title,.modal-title02 {
+  margin: 0 auto;
+  padding-top: 13rpx;
+  padding-bottom: 16rpx;
+  width: 45%;
+  border-radius: 40rpx;
+  font-size: 36rpx;
+  color: #fff;
+  background-color: #0ca6ba;
+  text-align: center;
+  margin-top: 50rpx;
+}
+.modal-title02{
+  margin-top: 0;  
+}
+

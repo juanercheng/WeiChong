@@ -1,0 +1,22 @@
+<view class="content">
+  <view class="logoBox">
+    <image src='../../images/logo.png' style='width:415rpx;height:78rpx'></image>
+  </view>
+  <view class='codeBox'>
+    <image bindtap="previewImage" src='{{scene}}'></image>
+    <text>扫描下载APP</text>
+  </view>
+  <view class='info'>
+    <text>  “手机微充”作为全球化共享手机无线充领导者，开创了全球范围内首个“智能共享手机充电平台”，致力于在家庭、公共区域提供安全高效便捷的无线充电服务，方便所有手机用户的充电需求。无论是在家、办公室、机场、宾馆、酒店还是列车上，用户都可以进行无线充电；未来将彻底摆脱并取代有线充电器，从根源上杜绝有线所带来的安全隐患问题，并借助互联网，将移动平台智能化、交易开放化及共享化，从而实现出差走遍大江南北，旅游行遍神州大地。无需携带充电器，同时有助于城市更大范围无线智能化。</text>
+    <view>
+    </view>
+    <view>免费热线 <text bindtap='call' style='color:red;text-decoration:underline;'>400-6608-115</text></view>
+    <view>驿网无际（上海）智能科技有限公司</view>
+    <view>地址：上海市奉贤区柘林镇科工路869号</view>
+    <view>电话：+86-021-37589188 37589288</view>
+    <view>传真：+86-021-37589188</view>
+    <view>网址：www.ewwj.net </view>
+    <view>邮箱：server@ewwj.net</view> 
+  </view>
+  
+</view>

@@ -1,0 +1,33 @@
+<view class="content">
+  <view class='topBox'>
+    <view class='imgBox'>
+      <image class='img' src='{{details.imgurl}}'></image>
+    </view>
+    <view class='con'>
+      <text class='title'>{{details.userName}}</text>
+      <text class="small" style='margin-top:39px'>{{details.mobile}}</text>
+    </view>
+  </view>
+  <view class='ulBox'>
+    <ul>
+      <li bindtap="go">
+        <view class='leftBox'>
+          <image src='../../images/postionLan.png' style='width:11px;height:14px;margin-top:4px'></image>
+          <text>{{details.province}}{{details.city}}{{details.area}}{{details.address}}</text>
+        </view>
+        <image src='../../images/details.png'></image>
+      </li>
+    </ul>
+  </view>
+  <view class='parting'></view>
+  <view class='info'>
+    <view class='title'>
+      <image src="../../images/doe.png"></image>
+      <text>商家简介</text>
+    </view>
+    <text>{{details.recommend}}</text>
+    <view class='imgBox' wx:for="{{imgData}}">
+      <image src='{{item}}'></image>
+    </view>
+  </view>
+</view>
